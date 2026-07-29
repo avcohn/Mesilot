@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>משלוחי קהילה</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏡 משלוחי קהילה</h1>
+
+<p class="intro">
+משפחות יקרות,
+<br>
+בחרו לאיזו משפחה להכין משלוח, בחרו תאריך פנוי והקלידו את שם המשפחה שלכם.
+</p>
+
+<div class="card">
+
+<label>לאיזו משפחה?</label>
+
+<select id="family">
+<option value="">בחר...</option>
+<option>בוסתן</option>
+<option>זהבי</option>
+</select>
+
+<label>בחרו תאריך</label>
+
+<select id="date">
+<option value="">בחר...</option>
+<option>03.08</option>
+<option>05.08</option>
+<option>10.08</option>
+<option>12.08</option>
+<option>17.08</option>
+</select>
+
+<label>שם המשפחה המכינה</label>
+
+<input
+id="cook"
+type="text"
+placeholder="לדוגמה: כהן">
+
+<button onclick="registerMeal()">
+
+הרשמה
+
+</button>
+
+</div>
+
+<h2>📅 הרשמות</h2>
+
+<table id="table">
+
+<thead>
+
+<tr>
+
+<th>משפחה</th>
+
+<th>תאריך</th>
+
+<th>שם המשפחה</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
